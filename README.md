@@ -97,7 +97,8 @@ Step 4: Draft the Email Template
 - Envelope Sender: Set the "From" field to look realistic but slightly off, such as IT Support <support@yourcompany-securitytest.com>.
 - Subject Line: Use a clear, action-oriented subject like Action Required: Password Expiration Notice.
 - The Body Text: Write a short, professional message. State that the user's password expires in 24 hours and provide a link to resolve it.
-- Insert the Tracking Link: Highlight your call-to-action text (e.g., "Click Here to Reset"), click the link icon, and enter {{.URL}}. GoPhish automatically replaces this placeholder with a unique tracking link for each recipient.
+- Insert the Tracking Link: Highlight your call-to-action text (e.g., "Click Here to Reset"), click the link icon, and enter {{.URL}}. GoPhish automatically replaces this placeholder with a unique tracking link for each recipient. <img width="858" height="737" alt="image" src="https://github.com/user-attachments/assets/e7db4716-bc7d-4827-8f45-1cd8d461395f" />
+
 <img width="1896" height="890" alt="image" src="https://github.com/user-attachments/assets/819eb1a0-f5a5-44ed-8b35-881d3957b649" />
               <img width="1575" height="762" alt="image" src="https://github.com/user-attachments/assets/ab655e51-6cff-4d27-b125-f223cd2e4e13" />
 
