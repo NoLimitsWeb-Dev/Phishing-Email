@@ -68,9 +68,33 @@ Step 2: Configure GoPhish to use MailHog
 - Download GoPhish: Get the official software from the GoPhish GitHub repository.
 - <img width="1577" height="890" alt="image" src="https://github.com/user-attachments/assets/721e5ea1-ff2d-4568-b5f2-5cb4841942eb" />
 - <img width="1633" height="540" alt="image" src="https://github.com/user-attachments/assets/3706e0e7-55aa-4069-af4a-3ef466e1b56e" />
-
-
 - Launch the Tool: Run the executable file and log into the local admin dashboard (usually https://127.0.0.1:3333).
 - Open your browser and log into your GoPhish dashboard (https://127.0.0.1:3333).
-- Click on Sending Profiles in the left menu, then click New Profile.Fill out the fields exactly like this:Name: MailHog ServerFrom: IT Security <security@simulation.local> (You can make up any fake address here)Host: 127.0.0.1:1025 (This tells GoPhish to send emails directly into MailHog)Leave the Username, Password, and Ignore Certificate Errors fields completely blank.Click Save Profile.
+- <img width="1605" height="817" alt="image" src="https://github.com/user-attachments/assets/af5fa683-64d8-4dfc-a075-8ec7d4fe59f4" />
+- Click on Sending Profiles in the left menu, then click New Profile.
+- <img width="1910" height="947" alt="image" src="https://github.com/user-attachments/assets/eef05cad-d4d4-4a76-a8c5-4d6ebb111735" />
 
+- Fill out the fields exactly like this: Name: MailHog ServerFrom: IT Security <security@simulation.local> (You can make up any fake address here)Host: 127.0.0.1:1025 (This tells GoPhish to send emails directly into MailHog)Leave the Username, Password, and Ignore Certificate Errors fields completely blank.
+<img width="1902" height="891" alt="image" src="https://github.com/user-attachments/assets/93e2ec47-35c0-4480-bd89-21649953555f" />
+Click Save Profile.
+
+
+Step 3: Set Up Your 2 Target Emails
+- Click on Users & Groups in the left menu.
+- <img width="1896" height="901" alt="image" src="https://github.com/user-attachments/assets/090a1586-369a-4c06-a53c-eb341942e911" />
+
+- Click New Group and name it My Targets.
+- Add your two or more test email addresses.(Note: Because MailHog catches all outgoing emails locally, you can actually type any email address here, but using your real ones is great for practicing the exact workflow).
+- <img width="1881" height="906" alt="image" src="https://github.com/user-attachments/assets/1af4110b-469e-4314-91a6-535b36211e77" />
+
+- Click Save Changes.
+
+
+Step 4: Draft the Email Template
+- In the GoPhish dashboard, navigate to Email Templates and click New Template. A beginner-friendly simulation should focus on a standard, recognizable corporate notification.Envelope Sender: Set the "From" field to look realistic but slightly off, such as IT Support <support@yourcompany-securitytest.com>.Subject Line: Use a clear, action-oriented subject like Action Required: Password Expiration Notice.The Body Text: Write a short, professional message. State that the user's password expires in 24 hours and provide a link to resolve it.Insert the Tracking Link: Highlight your call-to-action text (e.g., "Click Here to Reset"), click the link icon, and enter {{.URL}}. GoPhish automatically replaces this placeholder with a unique tracking link for each recipient.
+
+3. 
+Step 4: Launch the Campaign
+- Set up a simple Email Template (remember to include a link using the placeholder {{.URL}}) and a basic Landing Page.
+- Click Campaigns in the left menu, then click New Campaign.
+- Select your Template, Landing Page, and the My Targets group.In the Sending Profile dropdown, select MailHog Server.In the URL box, type: http://127.0.0.1:80Click Launch Campaign.
