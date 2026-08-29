@@ -58,6 +58,8 @@ MailHog acts as a "fake" local email server. It catches every email GoPhish send
 
 Here is the exact step-by-step guide to linking GoPhish and MailHog on your Windows 11 machine.
 
+
+
 Step 1: Download and Run MailHog
 
 - Go to the official MailHog GitHub Releases page.
@@ -77,6 +79,8 @@ Step 2: Configure GoPhish to use MailHog
 - <img width="1577" height="890" alt="image" src="https://github.com/user-attachments/assets/721e5ea1-ff2d-4568-b5f2-5cb4841942eb" />
 - <img width="1633" height="540" alt="image" src="https://github.com/user-attachments/assets/3706e0e7-55aa-4069-af4a-3ef466e1b56e" />
 - Launch the Tool: Run the executable file and log into the local admin dashboard (usually https://127.0.0.1:3333).
+- <img width="1507" height="729" alt="image" src="https://github.com/user-attachments/assets/507e730c-dc35-447a-b7bf-5ce276a2a19c" />
+
 - Open your browser and log into your GoPhish dashboard (https://127.0.0.1:3333).
 - <img width="1605" height="817" alt="image" src="https://github.com/user-attachments/assets/af5fa683-64d8-4dfc-a075-8ec7d4fe59f4" />
 - Click on Sending Profiles in the left menu, then click New Profile.
