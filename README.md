@@ -58,8 +58,9 @@ Step 1: Download and Run MailHog
 
 - Move this file into your Windows Defender exclusion folder alongside GoPhish.
 - Double-click the MailHog file to run it. A black command prompt window will open. Leave this window open.
-- <img width="1110" height="672" alt="image" src="https://github.com/user-attachments/assets/3437b0bb-2be1-4a70-8957-a3a27d874310" />
-
+- <img width="1106" height="842" alt="image" src="https://github.com/user-attachments/assets/6dc80525-958e-428e-ad9d-2bb0fcb413d6" />
 
 - MailHog is now running in the background. It uses port 1025 to receive emails and port 8025 to show you the inbox.
+- <img width="1468" height="195" alt="image" src="https://github.com/user-attachments/assets/7f2f62c7-cea1-40db-9c44-c227b74a9004" />
+
 
