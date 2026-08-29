@@ -144,17 +144,17 @@ Step 6: Create the User Group and Launch
 - <img width="1906" height="906" alt="image" src="https://github.com/user-attachments/assets/d875eb38-2ae2-44ae-8ff3-9daf7bcb5d64" />
 
 
-
+Phase 3:
 Now all the individual puzzle pieces are ready:
 1. Windows 11 Exclusion is active.
 2. MailHog is ready to catch emails.
 3. Sending Profile points to MailHog (127.0.0.1:1025).
-4. Users & Groups contains your 2 target emails.
+4. Users & Groups contains your 3 target emails.
 5. Email Template is saved with {{.URL}}.
 6. Landing Page is saved.
 
 
-Let's launch your project! This is where we tie GoPhish and MailHog together to see your tracking metrics work in real-time.
+Let's launch my project! This is where I tie GoPhish and MailHog together to see my tracking metrics work in real-time.
 
 
 Step 1: Open the Campaign Menu
