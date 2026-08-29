@@ -104,8 +104,23 @@ Step 4: Draft the Email Template
 
 
 
-3. 
+
+Step 5: Build the Landing Page
+Navigate to Landing Pages and click New Page. This is where users land if they click your link.
+<img width="1888" height="855" alt="image" src="https://github.com/user-attachments/assets/a755c14c-9d2d-4219-808f-11d8a12493e1" />
+
+- Design the Page: You can use simple HTML to create a basic page that says "This is a security simulation."Do Not Collect Data: Ensure the "Capture Submitted Credentials" option is turned off. For a beginner project, you only want to track who clicks, not harvest actual passwords.
+<img width="1892" height="925" alt="image" src="https://github.com/user-attachments/assets/6619b2bb-5e06-4851-b8bc-3e3336d6e5ee" />
+
+
+
+
+
 Step 4: Launch the Campaign
+
+
+
+
 - Set up a simple Email Template (remember to include a link using the placeholder {{.URL}}) and a basic Landing Page.
 - Click Campaigns in the left menu, then click New Campaign.
 - Select your Template, Landing Page, and the My Targets group.In the Sending Profile dropdown, select MailHog Server.In the URL box, type: http://127.0.0.1:80Click Launch Campaign.
