@@ -201,7 +201,7 @@ The GoPhish dashboard immediately registered the webhook callbacks, populating r
 You will see the timeline update instantly, showing the exact second the email was Sent, Opened, and Clicked!
 
 --------
-###📊 Project Findings & Key Metrics###
+📊 Project Findings & Key Metrics
 
 Total Targets: 3 Delivery Success 
 Rate: 100% (Local interception successful)
@@ -209,13 +209,13 @@ Email Open Rate: 100%
 Link Click-Through Rate: 100%
 
 
-
+---
 Defensive Takeaways
 1. Urgency as a Weapon: The "24-hour expiration" urgency indicator is highly effective at forcing split-second decisions before a user reviews technical anomalies.
 2. Slight Domain Mismatches: Spoofed sender envelopes (e.g., support@internal-it-update.local) can easily deceive an untrained eye if they mirror corporate naming conventions.
 3. The Importance of Reporting: Technical controls (like local filters) are a solid line of defense, but user education and clear "Report Phishing" pipelines are vital to stop active campaigns early.
 
-
+---
 ⚠️ Ethical Standards & Compliance Disclaimer
 This project was conducted strictly for educational, defensive, and research purposes.
 * No real user credentials or sensitive pieces of information were harvested, logged, or stored.
