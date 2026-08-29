@@ -5,6 +5,10 @@ Here is a comprehensive, professional README.md report. It emphasizes the author
 
 My First Phishing: Controlled Security Awareness Simulation
 
+
+
+
+
 📝 Project Overview:
 
 This repository documents my first hands-on cybersecurity project: an authorized, fully isolated phishing simulation campaign. The objective of this project was to understand the underlying mechanics of social engineering attacks, study tracking metrics, and explore defensive mitigation strategies.
