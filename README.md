@@ -1,7 +1,7 @@
 # Phishing-Email
 First Phishing Email Project
 
-Here is a comprehensive, professional README.md report tailored for your GitHub repository. It emphasizes the authorized, educational nature of your project while detailing the technical architecture you built.
+Here is a comprehensive, professional README.md report. It emphasizes the authorized, educational nature of the project while detailing the technical architecture built.
 
 My First Phishing: Controlled Security Awareness Simulation
 
@@ -11,12 +11,15 @@ This repository documents my first hands-on cybersecurity project: an authorized
 
 To maintain complete safety, ethical boundaries, and compliance, this project was executed entirely in a localized loop. The simulated emails never left the host machine and were intercepted locally, ensuring no real-world infrastructure or unintended users were impacted.
 
+
+Phase 1:
 🛠️ System Architecture & Tools:
 The project environment was built on a Windows 11 host utilizing an offline, sandboxed architecture:
 
-* GoPhish (v0.12+): An open-source phishing framework used to compile user groups, design baseline email templates, host landing pages, and track interaction timelines.MailHog: A local, developer-focused SMTP testing tool. 
+* GoPhish (v0.12+): An open-source phishing framework used to compile user groups, design baseline email templates, host landing pages, and track interaction timelines.
 
-* MailHog acted as an internal mail server that intercepted and held all outgoing messages, preventing them from routing to the live internet.
+* MailHog: A local, developer-focused SMTP testing tool. 
+MailHog acted as an internal mail server that intercepted and held all outgoing messages, preventing them from routing to the live internet.
 
 * Windows Defender Configurations: Tailored exclusion paths were implemented to host the simulation binaries securely without interrupting local OS firewalls.
 
@@ -29,6 +32,10 @@ The project environment was built on a Windows 11 host utilizing an offline, san
        ▼ (User Clicks tracked {{.URL}})
 [ Local Landing Page ] (Hosted securely at http://127.0.0.1)
 
+
+
+
+Phase 2:
 🛠️ Setup
 * Windows Defender Configurations: Tailored exclusion paths were implemented to host the simulation binaries securely without interrupting local OS firewalls.
 
@@ -46,8 +53,9 @@ Step 1: Set Up the Windows 11 Antivirus Exclusion
 Windows Defender will now completely ignore this folder, allowing GoPhish to run without being blocked or deleted.
 
 
-Using GoPhish together with MailHog is the absolute best and safest way to run this project.
+*** Using GoPhish together with MailHog is the absolute best and safest way to run this project.
 MailHog acts as a "fake" local email server. It catches every email GoPhish sends and displays it in a local web dashboard. This means your test emails never leave your computer and will never be blocked by real spam filters, making it 100% secure.
+
 Here is the exact step-by-step guide to linking GoPhish and MailHog on your Windows 11 machine.
 
 Step 1: Download and Run MailHog
