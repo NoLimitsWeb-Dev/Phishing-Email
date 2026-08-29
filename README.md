@@ -37,8 +37,6 @@ MailHog acted as an internal mail server that intercepted and held all outgoing 
 [ Local Landing Page ] (Hosted securely at http://127.0.0.1)
 
 
-
-
 Phase 2:
 🛠️ Setup
 * Windows Defender Configurations: Tailored exclusion paths were implemented to host the simulation binaries securely without interrupting local OS firewalls.
