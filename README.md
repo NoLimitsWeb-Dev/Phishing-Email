@@ -84,13 +84,14 @@ Step 2: Configure GoPhish to use MailHog
 - Open your browser and log into your GoPhish dashboard (https://127.0.0.1:3333).
 - <img width="1605" height="817" alt="image" src="https://github.com/user-attachments/assets/af5fa683-64d8-4dfc-a075-8ec7d4fe59f4" />
 - Click on Sending Profiles in the left menu, then click New Profile.
-- <img width="1910" height="947" alt="image" src="https://github.com/user-attachments/assets/eef05cad-d4d4-4a76-a8c5-4d6ebb111735" />
+- <img width="1882" height="917" alt="image" src="https://github.com/user-attachments/assets/041fa849-0094-46ce-85b6-2b6136369d2c" />
 
 - Fill out the fields exactly like this: Name: MailHog Server
-- From: IT Security <security@simulation.local> (You can make up any fake address here)
+- From: IT Security <security@simulation.local> (You can make up any fake address here- efootball@easport.com)
 - Host: 127.0.0.1:1025 (This tells GoPhish to send emails directly into MailHog)
 - Leave the Username, Password, and Ignore Certificate Errors fields completely blank.
-<img width="1902" height="891" alt="image" src="https://github.com/user-attachments/assets/93e2ec47-35c0-4480-bd89-21649953555f" />
+<img width="1888" height="906" alt="image" src="https://github.com/user-attachments/assets/8e12b96b-46b9-4acd-9eb6-5008da38773e" />
+
 Click Save Profile.
 
 
