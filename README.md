@@ -153,7 +153,9 @@ Step 3: Launch the Campaign
 <img width="1868" height="905" alt="image" src="https://github.com/user-attachments/assets/3930b8ee-fe56-4dec-a1fa-843dc30a2f4e" />
 <img width="1885" height="898" alt="image" src="https://github.com/user-attachments/assets/8a911ec6-23c9-4696-bdff-d888909f9163" />
 
+
 Step 4: Now Watch it Work (The Fun Part!)
+
 Now, let's trigger the tracking metrics manually:
 1. Open MailHog: Open a new browser tab and go to http://127.0.0.1:8025.
 2. View the Emails: You will see your three simulated emails sitting in the MailHog inbox. Click on one of them to read it.
@@ -171,11 +173,15 @@ The GoPhish dashboard immediately registered the webhook callbacks, populating r
 You will see the timeline update instantly, showing the exact second the email was Sent, Opened, and Clicked!
 
 
+
+
 📊 Project Findings & Key Metrics
 Total Targets: 3 Delivery Success 
 Rate: 100% (Local interception successful)
 Email Open Rate: 100%
 Link Click-Through Rate: 100%
+
+
 
 Defensive Takeaways
 1. Urgency as a Weapon: The "24-hour expiration" urgency indicator is highly effective at forcing split-second decisions before a user reviews technical anomalies.
