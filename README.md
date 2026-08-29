@@ -206,7 +206,7 @@ You will see the timeline update instantly, showing the exact second the email w
 
 
 
-📊 Project Findings & Key Metrics
+###📊 Project Findings & Key Metrics###
 Total Targets: 3 Delivery Success 
 Rate: 100% (Local interception successful)
 Email Open Rate: 100%
