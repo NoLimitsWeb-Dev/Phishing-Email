@@ -91,7 +91,16 @@ Step 3: Set Up Your 2 Target Emails
 
 
 Step 4: Draft the Email Template
-- In the GoPhish dashboard, navigate to Email Templates and click New Template. A beginner-friendly simulation should focus on a standard, recognizable corporate notification.Envelope Sender: Set the "From" field to look realistic but slightly off, such as IT Support <support@yourcompany-securitytest.com>.Subject Line: Use a clear, action-oriented subject like Action Required: Password Expiration Notice.The Body Text: Write a short, professional message. State that the user's password expires in 24 hours and provide a link to resolve it.Insert the Tracking Link: Highlight your call-to-action text (e.g., "Click Here to Reset"), click the link icon, and enter {{.URL}}. GoPhish automatically replaces this placeholder with a unique tracking link for each recipient.
+- In the GoPhish dashboard, navigate to Email Templates and click New Template. A beginner-friendly simulation should focus on a standard, recognizable corporate notification.
+- <img width="1860" height="881" alt="image" src="https://github.com/user-attachments/assets/b657185d-018b-4b13-a16b-42a7c1a1180d" />
+
+- Envelope Sender: Set the "From" field to look realistic but slightly off, such as IT Support <support@yourcompany-securitytest.com>.
+- Subject Line: Use a clear, action-oriented subject like Action Required: Password Expiration Notice.
+- The Body Text: Write a short, professional message. State that the user's password expires in 24 hours and provide a link to resolve it.
+- Insert the Tracking Link: Highlight your call-to-action text (e.g., "Click Here to Reset"), click the link icon, and enter {{.URL}}. GoPhish automatically replaces this placeholder with a unique tracking link for each recipient.
+<img width="1906" height="867" alt="image" src="https://github.com/user-attachments/assets/1e08a6ff-a913-4481-922a-b64cad0015e5" />
+<img width="1887" height="810" alt="image" src="https://github.com/user-attachments/assets/a0e085cc-2f32-46bf-b2a4-7dff4b48b923" />
+
 
 3. 
 Step 4: Launch the Campaign
