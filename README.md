@@ -113,14 +113,78 @@ Navigate to Landing Pages and click New Page. This is where users land if they c
 <img width="1892" height="925" alt="image" src="https://github.com/user-attachments/assets/6619b2bb-5e06-4851-b8bc-3e3336d6e5ee" />
 
 
+Step 6: Create the User Group and Launch
+- Users & Groups: Click New Group and manually enter 2 or 3 of your own test email addresses. Never target external users or people who have not given explicit, written permission.
+- <img width="1906" height="906" alt="image" src="https://github.com/user-attachments/assets/d875eb38-2ae2-44ae-8ff3-9daf7bcb5d64" />
 
 
 
-Step 4: Launch the Campaign
+Now have all the individual puzzle pieces ready:
+1. Windows 11 Exclusion is active.
+2. MailHog is ready to catch emails.
+3. Sending Profile points to MailHog (127.0.0.1:1025).
+4. Users & Groups contains your 2 target emails.
+5. Email Template is saved with {{.URL}}.
+6. Landing Page is saved.
 
 
+Let's launch your project! This is where we tie GoPhish and MailHog together to see your tracking metrics work in real-time.
 
 
-- Set up a simple Email Template (remember to include a link using the placeholder {{.URL}}) and a basic Landing Page.
-- Click Campaigns in the left menu, then click New Campaign.
-- Select your Template, Landing Page, and the My Targets group.In the Sending Profile dropdown, select MailHog Server.In the URL box, type: http://127.0.0.1:80Click Launch Campaign.
+Step 1: Open the Campaign Menu
+- Log into your GoPhish dashboard (https://127.0.0.1:3333).
+- Click on Campaigns in the left sidebar menu.
+- Click the blue New Campaign button at the top right.
+<img width="1890" height="821" alt="image" src="https://github.com/user-attachments/assets/0d6d4f05-dbaf-4a6d-9531-21a3066f9e6a" />
+
+Step 2: Fill Out the Campaign Details
+Configure the fields exactly like this to ensure the traffic routes correctly on your Windows 11 machine:
+- Name: Give it a name (e.g., My First Phishing Test).
+- Template: Select the email template you just created from the dropdown menu.
+- Landing Page: Select the landing page you just saved.
+- URL: Type exactly http://127.0.0.1 (This tells GoPhish to host the landing page on your local computer).
+- Sending Profile: Select MailHog Server (the one pointing to 127.0.0.1:1025).
+- Groups: Select your target group containing your 3 email addresses.
+
+Step 3: Launch the Campaign
+- Scroll down to the bottom of the page.
+- Click the blue Launch Campaign button.
+- GoPhish will immediately push the two emails through MailHog.
+<img width="1868" height="905" alt="image" src="https://github.com/user-attachments/assets/3930b8ee-fe56-4dec-a1fa-843dc30a2f4e" />
+<img width="1885" height="898" alt="image" src="https://github.com/user-attachments/assets/8a911ec6-23c9-4696-bdff-d888909f9163" />
+
+Step 4: Now Watch it Work (The Fun Part!)
+Now, let's trigger the tracking metrics manually:
+1. Open MailHog: Open a new browser tab and go to http://127.0.0.1:8025.
+2. View the Emails: You will see your three simulated emails sitting in the MailHog inbox. Click on one of them to read it.
+<img width="1907" height="355" alt="image" src="https://github.com/user-attachments/assets/dadf1a05-1b97-47b7-934a-86d159ee8baf" />
+
+3. Click the Tracking Link: Inside the email body, click your blue "Click on the link". It will open your custom "Security Simulation Notice" landing page.
+   <img width="1905" height="865" alt="image" src="https://github.com/user-attachments/assets/9d90380d-eaff-469f-9158-35f3551d05ea" />
+   <img width="1917" height="512" alt="image" src="https://github.com/user-attachments/assets/170e7210-aa60-4faf-8cfa-68b656ceac71" />
+
+
+4. Check the GoPhish Dashboard: Switch back to your GoPhish tab (https://127.0.0.1:3333) and look at your campaign. Refresh the page if needed.
+<img width="1320" height="680" alt="image" src="https://github.com/user-attachments/assets/f97ad858-7582-41a0-abbf-a90338bb586c" />
+Simulating user behavior, the test emails were opened, and the tracking links were interacted with.
+The GoPhish dashboard immediately registered the webhook callbacks, populating real-time timeline charts for Sent, Opened, and Clicked actions.
+You will see the timeline update instantly, showing the exact second the email was Sent, Opened, and Clicked!
+
+
+📊 Project Findings & Key Metrics
+Total Targets: 3 Delivery Success 
+Rate: 100% (Local interception successful)
+Email Open Rate: 100%
+Link Click-Through Rate: 100%
+
+Defensive Takeaways
+1. Urgency as a Weapon: The "24-hour expiration" urgency indicator is highly effective at forcing split-second decisions before a user reviews technical anomalies.
+2. Slight Domain Mismatches: Spoofed sender envelopes (e.g., support@internal-it-update.local) can easily deceive an untrained eye if they mirror corporate naming conventions.
+3. The Importance of Reporting: Technical controls (like local filters) are a solid line of defense, but user education and clear "Report Phishing" pipelines are vital to stop active campaigns early.
+
+
+⚠️ Ethical Standards & Compliance Disclaimer
+This project was conducted strictly for educational, defensive, and research purposes.
+* No real user credentials or sensitive pieces of information were harvested, logged, or stored.
+* All test targets were personal accounts under direct ownership of the author.
+* No emails were routed across public networks, ensuring complete alignment with standard authorization regulations and white-hat methodologies.
