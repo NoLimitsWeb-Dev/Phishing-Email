@@ -202,11 +202,8 @@ Simulating user behavior, the test emails were opened, and the tracking links we
 The GoPhish dashboard immediately registered the webhook callbacks, populating real-time timeline charts for Sent, Opened, and Clicked actions.
 You will see the timeline update instantly, showing the exact second the email was Sent, Opened, and Clicked!
 
-
-
-
-
 ###📊 Project Findings & Key Metrics###
+
 Total Targets: 3 Delivery Success 
 Rate: 100% (Local interception successful)
 Email Open Rate: 100%
