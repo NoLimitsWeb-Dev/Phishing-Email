@@ -6,7 +6,7 @@ Here is a comprehensive, professional README.md report. It emphasizes the author
 My First Phishing: Controlled Security Awareness Simulation
 
 
-
+---
 
 
 📝 Project Overview:
@@ -15,7 +15,7 @@ This repository documents my first hands-on cybersecurity project: an authorized
 
 To maintain complete safety, ethical boundaries, and compliance, this project was executed entirely in a localized loop. The simulated emails never left the host machine and were intercepted locally, ensuring no real-world infrastructure or unintended users were impacted.
 
-
+---
 Phase 1:
 🛠️ System Architecture & Tools:
 The project environment was built on a Windows 11 host utilizing an offline, sandboxed architecture:
@@ -36,7 +36,7 @@ MailHog acted as an internal mail server that intercepted and held all outgoing 
        ▼ (User Clicks tracked {{.URL}})
 [ Local Landing Page ] (Hosted securely at http://127.0.0.1)
 
-
+------
 Phase 2:
 🛠️ Setup
 * Windows Defender Configurations: Tailored exclusion paths were implemented to host the simulation binaries securely without interrupting local OS firewalls.
@@ -144,7 +144,7 @@ Navigate to Landing Pages and click New Page. This is where users land if they c
 Step 6: Create the User Group and Launch
 - Users & Groups: Click New Group and manually enter 2 or 3 of your own test email addresses. Never target external users or people who have not given explicit, written permission.
 - <img width="1906" height="906" alt="image" src="https://github.com/user-attachments/assets/d875eb38-2ae2-44ae-8ff3-9daf7bcb5d64" />
-
+----
 
 Phase 3:
 Now all the individual puzzle pieces are ready:
