@@ -145,7 +145,7 @@ Step 6: Create the User Group and Launch
 
 
 
-Now have all the individual puzzle pieces ready:
+Now all the individual puzzle pieces are ready:
 1. Windows 11 Exclusion is active.
 2. MailHog is ready to catch emails.
 3. Sending Profile points to MailHog (127.0.0.1:1025).
