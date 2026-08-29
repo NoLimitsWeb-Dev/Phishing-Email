@@ -200,7 +200,7 @@ Now, let's trigger the tracking metrics manually:
 <img width="1320" height="680" alt="image" src="https://github.com/user-attachments/assets/f97ad858-7582-41a0-abbf-a90338bb586c" />
 Simulating user behavior, the test emails were opened, and the tracking links were interacted with.
 The GoPhish dashboard immediately registered the webhook callbacks, populating real-time timeline charts for Sent, Opened, and Clicked actions.
-You will see the timeline update instantly, showing the exact second the email was Sent, Opened, and Clicked!
+You will see the timeline update instantly, showing the exact second the email was Sent, Opened, and Clicked!###
 
 ###📊 Project Findings & Key Metrics###
 
