@@ -175,7 +175,7 @@ Configure the fields exactly like this to ensure the traffic routes correctly on
 Step 3: Launch the Campaign
 - Scroll down to the bottom of the page.
 - Click the blue Launch Campaign button.
-- GoPhish will immediately push the two emails through MailHog.
+- GoPhish will immediately push the three emails through MailHog.
 <img width="1868" height="905" alt="image" src="https://github.com/user-attachments/assets/3930b8ee-fe56-4dec-a1fa-843dc30a2f4e" />
 <img width="1885" height="898" alt="image" src="https://github.com/user-attachments/assets/8a911ec6-23c9-4696-bdff-d888909f9163" />
 
