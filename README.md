@@ -190,11 +190,14 @@ Now, let's trigger the tracking metrics manually:
 <img width="1907" height="355" alt="image" src="https://github.com/user-attachments/assets/dadf1a05-1b97-47b7-934a-86d159ee8baf" />
 
 3. Click the Tracking Link: Inside the email body, click your blue "Click on the link". It will open your custom "Security Simulation Notice" landing page.
+---
    <img width="1905" height="865" alt="image" src="https://github.com/user-attachments/assets/9d90380d-eaff-469f-9158-35f3551d05ea" />
+---
    <img width="1917" height="512" alt="image" src="https://github.com/user-attachments/assets/170e7210-aa60-4faf-8cfa-68b656ceac71" />
+---
 
 
-4. Check the GoPhish Dashboard: Switch back to your GoPhish tab (https://127.0.0.1:3333) and look at your campaign. Refresh the page if needed.
+5. Check the GoPhish Dashboard: Switch back to your GoPhish tab (https://127.0.0.1:3333) and look at your campaign. Refresh the page if needed.
 <img width="1320" height="680" alt="image" src="https://github.com/user-attachments/assets/f97ad858-7582-41a0-abbf-a90338bb586c" />
 Simulating user behavior, the test emails were opened, and the tracking links were interacted with.
 The GoPhish dashboard immediately registered the webhook callbacks, populating real-time timeline charts for Sent, Opened, and Clicked actions.
